@@ -1,0 +1,6 @@
+name: Tutorial
+version: 1.0
+author: Developers
+main: com.Developers.Lifesteal.Lifesteal
+api-version: 1.14
+depend: []
