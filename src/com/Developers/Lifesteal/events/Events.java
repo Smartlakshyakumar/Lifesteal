@@ -17,27 +17,7 @@ public class Events implements Listener {
         Player player = event.getPlayer();
         player.sendMessage("§5 Welcome to §c§lLifeSteal SMP");
 
-        try{
-            File myObj = new File("players.txt");
-                if (myObj.createNewFile()) {
-                    getServer().getConsoleSender().sendMessage(ChatColor.GOLD + "File Created" + myObj.getName());
-                }
 
-                else {
-                    System.out.println("File already exists.");
-                    }
-
-            FileWriter myWriter = new FileWriter("players.txt");
-            myWriter.write("Files in Java might be tricky, but it is fun enough!");
-            myWriter.write("\nyep it works");
-            myWriter.close();
-            getServer().getConsoleSender().sendMessage("Successfully wrote to the file.");
-            }
-
-            catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-            }
     }
 
 
